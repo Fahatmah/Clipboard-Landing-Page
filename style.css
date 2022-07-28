@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    /* Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+/* global sizes */
+
+.page, footer .links_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+
+p {
+    max-width: 40rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--Grayish-Blue);
+}
+
+.page img {
+    width: 100%;
+}
+
+.download_links .btn {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 40px;
+    width: 19rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.ios_dl_link.btn {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0px 10px 20px hsla(171, 66%, 44%, 0.3);
+    border-bottom-color: hsl(171, 68%, 28%);
+}
+
+.ios_dl_link.btn:hover {
+    background-color: hsl(171, 55%, 61%);
+}
+
+.mac_dl_link.btn {
+    background-color: var(--Light-Blue);
+    box-shadow: 0px 10px 20px hsla(233, 100%, 69%, 0.3);
+    border-bottom-color: hsl(233, 46%, 43%);
+}
+
+.mac_dl_link.btn:hover {
+    background-color: hsl(233, 88%, 77%);
+}
+
+/* end of global sizes */
+
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* page one */
+
+.page.one .main_logo {
+    width: 6.5rem;
+    margin-top: 7.3rem;
+}
+
+.main_header {
+    margin-top: 4rem;
+    font-size: 1.9rem;
+}
+
+.download_links {
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.second_main_header {
+    margin-top: 9rem;
+    font-weight: 600;
+}
+
+/* page two */
+
+.page.two {
+    gap: 8rem;
+    margin-top: 4rem;
+}
+
+.page.two .computer_image {
+    width: 100%;
+}
+
+.page.two .feature {
+    margin-top: 3rem;
+}
+
+.page.two .feature h1 {
+    font-size: 1.3rem;
+}
+
+
+/* page three */
+
+.page.three {
+    margin-top: 8rem;
+}
+
+.page .devices {
+    margin-top: 3rem;
+}
+
+/* page four */
+
+.page.four {
+    margin-top: 6rem;
+}
+
+.page.four .clipboard_functions,
+.page.four .companies_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.clipboard_functions .function img {
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+
+.clipboard_functions .function h1 {
+    font-size: 1.3rem;
+}
+
+.page.four .companies_logo {
+    margin-top: 8rem;
+}
+
+.page.four .companies_logo img{
+    width: 9rem;
+}
+
+.page.four .companies_logo .logo.ibm, 
+.page.four .companies_logo .logo.hp, 
+.page.four .companies_logo .logo.vg {
+    width: 6.8rem;
+}
+
+/* page five */
+
+.page.five {
+    margin-top: 8rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8rem;
+    background-color: hsla(201, 11%, 66%, 0.1); 
+}
+
+footer .links_container{
+    position: relative;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+footer .logo {
+    width: 3rem;
+}
+
+footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+footer .links a {
+    flex: 0 1 25%;
+    font-size: 1rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+footer .sm_icons {
+    display: flex;
+    gap: 1.8rem;
+}
+
+footer .links a:hover {
+    color: var(--Strong-Cyan);
+}
+
+footer .sm_icons img:hover {
+    filter: invert(57%) 
+            sepia(82%) 
+            saturate(376%) 
+            hue-rotate(122deg) 
+            brightness(91%) 
+            contrast(91%);
+}
+
+@media (min-width:900px) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .download_links .btn {
+        width: 13rem;
+    }
+
+    .download_links,
+    .page.two, 
+    .page.four .clipboard_functions,
+    .page.four .companies_logo,
+    footer .links_container,
+    footer .links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .page.two {
+        gap: 4rem;
+    }
+
+    .page.two .computer_image {
+        margin-left: -5rem;
+        width: 40rem;
+    }
+
+    .page.two .clipboard_features {
+        max-width: 24rem;
+    }
+
+    .page.two .feature h1,
+    .page.two .feature p{
+        text-align: left;
+    }
+
+    .page.three .devices {
+        max-width: 50rem;
+    }
+
+    footer .links_container{
+        gap: 4rem;
+        width: 70rem;
+    }
+
+    footer .links {
+        flex-direction: row;
+    }
+
+    footer .links a {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1030px) {
+    .page.two .computer_image {
+        margin-left: -18rem;
+        width: 45rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page.two {
+        gap: 8rem;
+    }
+
+    .page.two .computer_image {
+        margin-left: -16.5rem;
+        width: 45rem;
+    }
+
+    .page.four .clipboard_functions {
+        width: 78rem;
+    }
+
+    .page.four .companies_logo{
+        gap: 6rem;
+    }
+}
